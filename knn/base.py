@@ -20,15 +20,13 @@ def euclidean_distance(point1, point2):
     return distance
 
 
-def find_neighbors(X_train, y_train, query_point, k):
+def find_neighbors(X_train, query_point, k):
     """
     Find the 'k' nearest neighbors of a query point within a dataset.
 
     Parameters:
     X_train : list or array-like
         Training dataset containing features.
-    y_train : list or array-like
-        Training dataset containing labels.
     query_point : list or array-like
         Coordinates of the query point.
     k : int
